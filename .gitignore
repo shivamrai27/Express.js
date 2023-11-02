@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/express_generator/node_modules/express
 /.pnp
 .pnp.js
 

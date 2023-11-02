@@ -12,7 +12,8 @@ To run the code you dont need to provide .listen or port_number and file name
 directly run the npx nodemon
 
 ## How to use ejs 
-```router.get('/', (req, res) => {
+```
+router.get('/', (req, res) => {
     //Give the file name in render method 
     //which is contained by views folder but without .ejs extension
   res.render('index')

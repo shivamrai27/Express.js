@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', (req, res) => {
   // res.send("Hello Generator")
   //To use ejs file just give the name without .ejs 
-  res.render('index', { name: "shivam" }) // u can give variable to dynamically render it
+  res.render('index', { name: "Shivam" }) // u can give variable to dynamically render it
 })
 
 module.exports = router;

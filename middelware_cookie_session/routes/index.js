@@ -3,9 +3,18 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.send("On Home");
+  res.cookie("age", 25);
+  res.render("index");
 });
-
+router.get('/set', function (req, res) {
+  res.cookie("age", "Shivam");
+  res.render("set");
+})
+router.get('/check', function (req, res) {
+  const cookie = req.cookies;
+  res.render("check")
+  console.log(cookie);
+})
 //Middleware created
 /*
 var a = 10;
@@ -18,5 +27,8 @@ router.get('/middleware', function (req, res, next) {
   res.send(`On profile ${a}`);
 });
 */
+
+//Cookie 
+
 
 module.exports = router;
